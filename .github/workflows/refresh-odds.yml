@@ -1,6 +1,14 @@
 name: Refresh NFL sportsbook data
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/refresh-odds.yml"
+      - "scripts/**"
+      - "tests/**"
+      - "config/**"
   workflow_dispatch:
     inputs:
       market_scope:
@@ -75,4 +83,3 @@ jobs:
             git commit -m "data: refresh NFL sportsbook markets"
             git push
           fi
-
