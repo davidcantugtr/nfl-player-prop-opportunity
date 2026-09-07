@@ -12,13 +12,13 @@ Automated sportsbook data layer for the RB Q1 and WR full-game opportunity model
 ## What the pipeline does
 
 1. Retrieves upcoming NFL events and game lines from The Odds API.
-2. Retrieves event-level player props for games inside the configured lookahead window.
+2. Retrieves event-level sportsbook and DFS player props, including Underdog Fantasy (`us_dfs`), for games inside the configured lookahead window.
 3. Converts American odds to raw implied probability.
 4. Removes bookmaker margin by normalizing paired outcomes.
 5. Writes current CSV/JSON outputs plus timestamped weekly snapshots.
 6. Optionally posts the normalized payload to a Google Apps Script webhook when `SHEETS_WEBHOOK_URL` is configured.
 
-The default scheduled run uses only `player_rush_yds` and `player_reception_yds` to control API-credit usage. Manual expanded runs also include rushing attempts, receptions, and anytime touchdowns.
+The default scheduled run uses only `player_rush_yds` and `player_reception_yds` across the `us` and `us_dfs` prop regions to control API-credit usage. Manual expanded runs also include rushing attempts, receptions, and anytime touchdowns.
 
 ## Repository secret
 
@@ -55,7 +55,7 @@ Open **Actions → Refresh NFL sportsbook data → Run workflow**. Choose:
 - `primary`: rushing yards and receiving yards
 - `expanded`: adds rushing attempts, receptions, and anytime TD
 
-The workflow never invents missing markets. A sportsbook or market that has not posted a price remains absent.
+Underdog Fantasy is ingested as a dedicated pick’em source (`bookmaker key: underdog`) and should be evaluated separately from traditional sportsbook consensus because payout multipliers can vary with the selected combination. The workflow never invents missing markets. A sportsbook or market that has not posted a price remains absent.
 
 ## Local execution
 

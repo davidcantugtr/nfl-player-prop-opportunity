@@ -159,7 +159,8 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--season", type=int, default=2026)
     parser.add_argument("--lookahead-hours", type=int, default=72)
-    parser.add_argument("--regions", default="us")
+    parser.add_argument("--regions", default="us", help="Regions used for game lines")
+    parser.add_argument("--prop-regions", default="us,us_dfs", help="Regions used for player props; us_dfs includes Underdog")
     parser.add_argument("--markets", default="player_rush_yds,player_reception_yds")
     parser.add_argument("--output-dir", default="data")
     args = parser.parse_args()
@@ -185,7 +186,7 @@ def main() -> int:
     last_quota = quota
     for event in eligible:
         payload, last_quota = api_get("/sports/%s/events/%s/odds" % (SPORT, event["id"]), api_key, {
-            "regions": args.regions, "markets": args.markets, "oddsFormat": "american", "dateFormat": "iso"
+            "regions": args.prop_regions, "markets": args.markets, "oddsFormat": "american", "dateFormat": "iso"
         })
         prop_payloads.append(payload)
 
@@ -201,7 +202,8 @@ def main() -> int:
     write_json(latest / "events.json", eligible)
     status = {
         "generated_at": now.isoformat(), "season": args.season, "week": week,
-        "lookahead_hours": args.lookahead_hours, "markets": args.markets.split(","),
+        "lookahead_hours": args.lookahead_hours, "game_regions": args.regions.split(","),
+        "prop_regions": args.prop_regions.split(","), "markets": args.markets.split(","),
         "eligible_events": len(eligible), "player_prop_rows": len(props), "game_line_rows": len(lines),
         "quota": last_quota or game_quota, "sheet_webhook_configured": bool(os.environ.get("SHEETS_WEBHOOK_URL")),
     }

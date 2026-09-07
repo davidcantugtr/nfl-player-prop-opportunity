@@ -56,7 +56,7 @@ jobs:
         shell: bash
         run: |
           if [[ "${{ github.event.inputs.market_scope || 'primary' }}" == "expanded" ]]; then
-            echo "value=player_rush_yds,player_rush_attempts,player_reception_yds,player_receptions,player_anytime_td" >> "$GITHUB_OUTPUT"
+            echo "value=player_rush_yds,player_rush_yds_alternate,player_rush_attempts,player_reception_yds,player_reception_yds_alternate,player_receptions,player_anytime_td" >> "$GITHUB_OUTPUT"
           else
             echo "value=player_rush_yds,player_reception_yds" >> "$GITHUB_OUTPUT"
           fi
@@ -69,6 +69,8 @@ jobs:
           python scripts/refresh_odds.py \
             --season 2026 \
             --lookahead-hours "${{ github.event.inputs.lookahead_hours || '72' }}" \
+            --regions "us" \
+            --prop-regions "us,us_dfs" \
             --markets "${{ steps.markets.outputs.value }}"
 
       - name: Commit normalized outputs

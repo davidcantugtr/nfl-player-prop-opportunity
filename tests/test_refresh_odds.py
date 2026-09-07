@@ -40,6 +40,22 @@ class ProbabilityTests(unittest.TestCase):
         self.assertEqual(rows[0]["Position"], "WR")
         self.assertAlmostEqual(rows[0]["No-Vig Implied"], 0.5)
 
+    def test_underdog_pick_normalization(self):
+        events = [{
+            "id": "evt2", "commence_time": "2026-09-10T00:00:00Z",
+            "home_team": "Home", "away_team": "Away",
+            "bookmakers": [{"key": "underdog", "title": "Underdog Fantasy", "last_update": "2026-09-09T00:00:00Z", "markets": [{
+                "key": "player_reception_yds", "outcomes": [
+                    {"name": "Over", "description": "Example Receiver", "price": -110, "point": 55.5},
+                    {"name": "Under", "description": "Example Receiver", "price": -110, "point": 55.5},
+                ]
+            }]}]
+        }]
+        rows = MOD.normalize_props(events, 2026, 1, "source")
+        self.assertEqual({row["Book Key"] for row in rows}, {"underdog"})
+        self.assertEqual({row["Side"] for row in rows}, {"Over", "Under"})
+        self.assertAlmostEqual(sum(row["No-Vig Implied"] for row in rows), 1.0)
+
 
 if __name__ == "__main__":
     unittest.main()

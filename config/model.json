@@ -2,7 +2,8 @@
   "season": 2026,
   "regular_season_start": "2026-09-10T00:00:00Z",
   "lookahead_hours": 72,
-  "regions": "us",
+  "game_regions": "us",
+  "prop_regions": "us,us_dfs",
   "primary_markets": [
     "player_rush_yds",
     "player_reception_yds"
@@ -10,7 +11,9 @@
   "expanded_markets": [
     "player_rush_yds",
     "player_rush_attempts",
+    "player_rush_yds_alternate",
     "player_reception_yds",
+    "player_reception_yds_alternate",
     "player_receptions",
     "player_anytime_td"
   ],
