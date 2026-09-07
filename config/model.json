@@ -1,0 +1,33 @@
+{
+  "season": 2026,
+  "regular_season_start": "2026-09-10T00:00:00Z",
+  "lookahead_hours": 72,
+  "regions": "us",
+  "primary_markets": [
+    "player_rush_yds",
+    "player_reception_yds"
+  ],
+  "expanded_markets": [
+    "player_rush_yds",
+    "player_rush_attempts",
+    "player_reception_yds",
+    "player_receptions",
+    "player_anytime_td"
+  ],
+  "score_weights": {
+    "sportsbook_no_vig_probability": 0.45,
+    "underlying_opportunity_model": 0.30,
+    "matchup_sos": 0.15,
+    "confidence_availability": 0.10
+  },
+  "tier_thresholds": {
+    "elite": 82,
+    "prime": 74,
+    "strong": 66,
+    "watch": 58,
+    "speculative": 50
+  },
+  "elite_prime_min_books": 3,
+  "wr_min_s2d_snap_share_exclusive": 0.20
+}
+

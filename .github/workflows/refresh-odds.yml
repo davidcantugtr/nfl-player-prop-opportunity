@@ -1,0 +1,78 @@
+name: Refresh NFL sportsbook data
+
+on:
+  workflow_dispatch:
+    inputs:
+      market_scope:
+        description: Markets to retrieve
+        required: true
+        default: primary
+        type: choice
+        options:
+          - primary
+          - expanded
+      lookahead_hours:
+        description: Only retrieve props for games inside this window
+        required: true
+        default: "72"
+  schedule:
+    - cron: "15 16 * * 4"
+    - cron: "15 14 * * 0"
+    - cron: "15 20 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-nfl-odds
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Select market scope
+        id: markets
+        shell: bash
+        run: |
+          if [[ "${{ github.event.inputs.market_scope || 'primary' }}" == "expanded" ]]; then
+            echo "value=player_rush_yds,player_rush_attempts,player_reception_yds,player_receptions,player_anytime_td" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=player_rush_yds,player_reception_yds" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Refresh odds
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          SHEETS_WEBHOOK_URL: ${{ secrets.SHEETS_WEBHOOK_URL }}
+        run: |
+          python scripts/refresh_odds.py \
+            --season 2026 \
+            --lookahead-hours "${{ github.event.inputs.lookahead_hours || '72' }}" \
+            --markets "${{ steps.markets.outputs.value }}"
+
+      - name: Commit normalized outputs
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No data changes to commit"
+          else
+            git commit -m "data: refresh NFL sportsbook markets"
+            git push
+          fi
+
