@@ -42,6 +42,12 @@ data/snapshots/YYYY-Www/
 
 `player_props.csv` is ordered to match the Google Sheet's **Sportsbook Odds Input** tab. The workbook calculates its own consensus and blended tiers, while the normalized no-vig values remain available for audit.
 
+## Google Sheets auto-refresh
+
+The live workbook contains **GitHub Prop Feed** and **GitHub Game Feed** tabs that use `IMPORTDATA` against this repository's current CSV outputs. Google requires a one-time external-data approval for each formula: open each feed tab in a desktop browser, select cell A1, and click **Allow access**. Until approval, the consensus engine safely falls back to the last verified values in the staging tabs.
+
+This connection depends on the repository remaining public. If the repository becomes private, replace `IMPORTDATA` with the optional Apps Script webhook and add its deployment URL as the `SHEETS_WEBHOOK_URL` repository secret.
+
 ## Manual run
 
 Open **Actions → Refresh NFL sportsbook data → Run workflow**. Choose:
@@ -62,4 +68,3 @@ Run tests with:
 ```bash
 python -m unittest discover -s tests -v
 ```
-
