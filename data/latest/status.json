@@ -1,0 +1,19 @@
+{
+  "eligible_events": 1,
+  "game_line_rows": 3148,
+  "generated_at": "2026-09-07T19:51:13.949609+00:00",
+  "lookahead_hours": 72,
+  "markets": [
+    "player_rush_yds",
+    "player_reception_yds"
+  ],
+  "player_prop_rows": 170,
+  "quota": {
+    "requests_last": "2",
+    "requests_remaining": "495",
+    "requests_used": "5"
+  },
+  "season": 2026,
+  "sheet_webhook_configured": false,
+  "week": 1
+}
