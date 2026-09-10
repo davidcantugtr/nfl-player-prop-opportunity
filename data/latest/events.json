@@ -1,9 +1,73 @@
 [
   {
-    "away_team": "New England Patriots",
-    "commence_time": "2026-09-10T00:20:00Z",
-    "home_team": "Seattle Seahawks",
-    "id": "8c94552d022acec4a0458d70c19d3da9",
+    "away_team": "San Francisco 49ers",
+    "commence_time": "2026-09-11T00:35:00Z",
+    "home_team": "Los Angeles Rams",
+    "id": "acc580d74344ea3b31bbcdd057fe6a9c",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Atlanta Falcons",
+    "commence_time": "2026-09-13T17:00:00Z",
+    "home_team": "Pittsburgh Steelers",
+    "id": "95c01d1bb797d6df14824b106c5a9130",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Baltimore Ravens",
+    "commence_time": "2026-09-13T17:00:00Z",
+    "home_team": "Indianapolis Colts",
+    "id": "b6cfdcbafa61ce220ba87dc2d9b80c77",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Buffalo Bills",
+    "commence_time": "2026-09-13T17:00:00Z",
+    "home_team": "Houston Texans",
+    "id": "7e09efed7e12c659b82740b67ce2f9a1",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Chicago Bears",
+    "commence_time": "2026-09-13T17:00:00Z",
+    "home_team": "Carolina Panthers",
+    "id": "fc362aff0d889ec52d358307a70c32ed",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Tampa Bay Buccaneers",
+    "commence_time": "2026-09-13T17:00:00Z",
+    "home_team": "Cincinnati Bengals",
+    "id": "ed6d24ff979f9c71979fead577b0b3f7",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Cleveland Browns",
+    "commence_time": "2026-09-13T17:00:00Z",
+    "home_team": "Jacksonville Jaguars",
+    "id": "e55c6fe19fce094ce214c8b0e5b504e9",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "New Orleans Saints",
+    "commence_time": "2026-09-13T17:00:00Z",
+    "home_team": "Detroit Lions",
+    "id": "c1d3fcec25aaeb06ebd2244d33d338e0",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "New York Jets",
+    "commence_time": "2026-09-13T17:00:00Z",
+    "home_team": "Tennessee Titans",
+    "id": "7dddb296a42e7a41a774b24bd1709ce1",
     "sport_key": "americanfootball_nfl",
     "sport_title": "NFL"
   }
