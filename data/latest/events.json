@@ -6,5 +6,69 @@
     "id": "855f58fad5f0f14b239f4f63df27998b",
     "sport_key": "americanfootball_nfl",
     "sport_title": "NFL"
+  },
+  {
+    "away_team": "Houston Texans",
+    "commence_time": "2026-10-18T13:30:00Z",
+    "home_team": "Jacksonville Jaguars",
+    "id": "57418b2cf5aca558b3c98eafac1e264a",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Chicago Bears",
+    "commence_time": "2026-10-18T17:00:00Z",
+    "home_team": "Atlanta Falcons",
+    "id": "7c312fdf24fb35f58b0e07c2932cc997",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Baltimore Ravens",
+    "commence_time": "2026-10-18T17:00:00Z",
+    "home_team": "Cleveland Browns",
+    "id": "e86227938fd3cf008fc5648fb5128344",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Carolina Panthers",
+    "commence_time": "2026-10-18T17:00:00Z",
+    "home_team": "Philadelphia Eagles",
+    "id": "caca2d752fe1a1779029082e95332fcc",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Tennessee Titans",
+    "commence_time": "2026-10-18T17:00:00Z",
+    "home_team": "Indianapolis Colts",
+    "id": "84aa9e190e625d7e9cd67e1f157a45b4",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "New York Jets",
+    "commence_time": "2026-10-18T17:00:00Z",
+    "home_team": "New England Patriots",
+    "id": "0b0b582b32b09ab6ff6664ffae0c9653",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "New Orleans Saints",
+    "commence_time": "2026-10-18T17:00:00Z",
+    "home_team": "New York Giants",
+    "id": "1cf74afd313e9fd300e1462012b174cb",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Pittsburgh Steelers",
+    "commence_time": "2026-10-18T17:00:00Z",
+    "home_team": "Tampa Bay Buccaneers",
+    "id": "27f3994841ce8081c0b7349cf3d1e3d7",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
   }
 ]
