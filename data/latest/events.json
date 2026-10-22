@@ -1,9 +1,81 @@
 [
   {
-    "away_team": "Washington Commanders",
-    "commence_time": "2026-10-20T00:15:00Z",
-    "home_team": "San Francisco 49ers",
-    "id": "f122527f003276d3bca19efa48c902c1",
+    "away_team": "New England Patriots",
+    "commence_time": "2026-10-23T00:15:00Z",
+    "home_team": "Chicago Bears",
+    "id": "ffebea881c1d7b2dfb85b3e590c35985",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Pittsburgh Steelers",
+    "commence_time": "2026-10-25T13:30:00Z",
+    "home_team": "New Orleans Saints",
+    "id": "2e710ea5a306b614f0f966e3d78732f8",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "San Francisco 49ers",
+    "commence_time": "2026-10-25T17:00:00Z",
+    "home_team": "Atlanta Falcons",
+    "id": "b1be064fb52a198a62109c279e7ab24c",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Cincinnati Bengals",
+    "commence_time": "2026-10-25T17:00:00Z",
+    "home_team": "Baltimore Ravens",
+    "id": "550ec5290f935d311995affbcb0b5c79",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Tampa Bay Buccaneers",
+    "commence_time": "2026-10-25T17:00:00Z",
+    "home_team": "Carolina Panthers",
+    "id": "2823e986597c449ab94126cd5ed3fae9",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Cleveland Browns",
+    "commence_time": "2026-10-25T17:00:00Z",
+    "home_team": "Tennessee Titans",
+    "id": "5dce18baccec5d3ad5fb3a3ce52f7619",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "New York Giants",
+    "commence_time": "2026-10-25T17:00:00Z",
+    "home_team": "Houston Texans",
+    "id": "2bba7fde6f97d0e54403d53676e4ab63",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Indianapolis Colts",
+    "commence_time": "2026-10-25T17:00:00Z",
+    "home_team": "Minnesota Vikings",
+    "id": "f3992ad4496724baf7dcd1ef58245d6b",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Miami Dolphins",
+    "commence_time": "2026-10-25T17:00:00Z",
+    "home_team": "New York Jets",
+    "id": "be5dd120ca08b43d647b6caa8953500a",
+    "sport_key": "americanfootball_nfl",
+    "sport_title": "NFL"
+  },
+  {
+    "away_team": "Denver Broncos",
+    "commence_time": "2026-10-25T20:05:00Z",
+    "home_team": "Arizona Cardinals",
+    "id": "436119bb3ccdaa6ed7808aa3ebd82b76",
     "sport_key": "americanfootball_nfl",
     "sport_title": "NFL"
   }
