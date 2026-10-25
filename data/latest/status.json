@@ -1,24 +1,24 @@
 {
-  "eligible_events": 10,
-  "game_line_rows": 1176,
+  "eligible_events": 5,
+  "game_line_rows": 518,
   "game_regions": [
     "us"
   ],
-  "generated_at": "2026-10-22T20:07:13.173864+00:00",
+  "generated_at": "2026-10-25T17:37:40.098053+00:00",
   "lookahead_hours": 72,
   "markets": [
     "player_rush_yds",
     "player_reception_yds"
   ],
-  "player_prop_rows": 2150,
+  "player_prop_rows": 1659,
   "prop_regions": [
     "us",
     "us_dfs"
   ],
   "quota": {
     "requests_last": "4",
-    "requests_remaining": "210",
-    "requests_used": "290"
+    "requests_remaining": "187",
+    "requests_used": "313"
   },
   "season": 2026,
   "sheet_webhook_configured": false,
