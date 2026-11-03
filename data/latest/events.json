@@ -1,41 +1,9 @@
 [
   {
-    "away_team": "Los Angeles Chargers",
-    "commence_time": "2026-11-01T21:05:00Z",
-    "home_team": "Los Angeles Rams",
-    "id": "2ff84d3f6053d083c8c0a5bebf7cdd4c",
-    "sport_key": "americanfootball_nfl",
-    "sport_title": "NFL"
-  },
-  {
-    "away_team": "Kansas City Chiefs",
-    "commence_time": "2026-11-01T21:25:00Z",
-    "home_team": "Denver Broncos",
-    "id": "f2a036d5edf483a277880014861e78ad",
-    "sport_key": "americanfootball_nfl",
-    "sport_title": "NFL"
-  },
-  {
-    "away_team": "New England Patriots",
-    "commence_time": "2026-11-01T21:25:00Z",
-    "home_team": "Miami Dolphins",
-    "id": "05405af79752f5e742cdf50b61f6745e",
-    "sport_key": "americanfootball_nfl",
-    "sport_title": "NFL"
-  },
-  {
-    "away_team": "Philadelphia Eagles",
-    "commence_time": "2026-11-02T01:20:00Z",
-    "home_team": "Washington Commanders",
-    "id": "b9c60db63b1a19ad319f24b33c0defe8",
-    "sport_key": "americanfootball_nfl",
-    "sport_title": "NFL"
-  },
-  {
-    "away_team": "Chicago Bears",
-    "commence_time": "2026-11-03T01:20:00Z",
-    "home_team": "Seattle Seahawks",
-    "id": "7d664fbcd39350e559d83c0068ba7169",
+    "away_team": "Jacksonville Jaguars",
+    "commence_time": "2026-11-06T01:15:00Z",
+    "home_team": "Baltimore Ravens",
+    "id": "c75744790b7acf6260c78ba5e739c0e5",
     "sport_key": "americanfootball_nfl",
     "sport_title": "NFL"
   }
