@@ -1,49 +1,9 @@
 [
   {
-    "away_team": "Houston Texans",
-    "commence_time": "2026-11-08T21:05:00Z",
-    "home_team": "Los Angeles Chargers",
-    "id": "39aeac43cea7b12558b91cdab1255a10",
-    "sport_key": "americanfootball_nfl",
-    "sport_title": "NFL"
-  },
-  {
-    "away_team": "Arizona Cardinals",
-    "commence_time": "2026-11-08T21:25:00Z",
-    "home_team": "Seattle Seahawks",
-    "id": "240e23b02b1e3fef655d04a286b5a623",
-    "sport_key": "americanfootball_nfl",
-    "sport_title": "NFL"
-  },
-  {
-    "away_team": "Green Bay Packers",
-    "commence_time": "2026-11-08T21:25:00Z",
-    "home_team": "New England Patriots",
-    "id": "2922c573ec3df8466c4a34975e446898",
-    "sport_key": "americanfootball_nfl",
-    "sport_title": "NFL"
-  },
-  {
-    "away_team": "Las Vegas Raiders",
-    "commence_time": "2026-11-08T21:25:00Z",
-    "home_team": "San Francisco 49ers",
-    "id": "ac9d38a18d5c92814233a31aa9a48d78",
-    "sport_key": "americanfootball_nfl",
-    "sport_title": "NFL"
-  },
-  {
-    "away_team": "Tampa Bay Buccaneers",
-    "commence_time": "2026-11-09T01:20:00Z",
-    "home_team": "Chicago Bears",
-    "id": "9760d8f19f84bfee300a74ceb656c95d",
-    "sport_key": "americanfootball_nfl",
-    "sport_title": "NFL"
-  },
-  {
-    "away_team": "Buffalo Bills",
-    "commence_time": "2026-11-10T01:15:00Z",
-    "home_team": "Minnesota Vikings",
-    "id": "17ad7eff2f7875e20a8109abe40470e3",
+    "away_team": "Washington Commanders",
+    "commence_time": "2026-11-13T01:15:00Z",
+    "home_team": "New York Giants",
+    "id": "74d39e19225caf211ad2c8eb4110179f",
     "sport_key": "americanfootball_nfl",
     "sport_title": "NFL"
   }
